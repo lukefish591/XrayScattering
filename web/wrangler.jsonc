@@ -1,0 +1,13 @@
+{
+  // Independent static-assets Worker for the Pyodide scattering toy.
+  // Do NOT bind routes on the cardsharpner Worker, Stripe, or LICENSES KV.
+  // Deploy: from this directory, `npx wrangler deploy` after `bash build.sh`.
+  "name": "xray-scattering",
+  "compatibility_date": "2026-09-18",
+  "preview_urls": true,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "html_handling": "auto-trailing-slash"
+  }
+}

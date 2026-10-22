@@ -1,0 +1,41 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+
+# Pyodide convert staging and output (rebuild with bash web/build.sh)
+web/stage/
+web/dist/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Scientific outputs (keep folder READMEs; do not commit measured or generated data)
+data/**/*.h5
+data/**/*.hdf5
+data/**/*.nxs
+data/**/*.edf
+data/**/*.cbf
+data/**/*.tif
+data/**/*.tiff
+data/**/*.npy
+data/**/*.npz
+data/**/*.csv
+data/**/*.dat
+data/**/*.xy
+data/**/*.xye
+!data/**/README.md
